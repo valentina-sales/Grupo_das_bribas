@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Controle | Distribuidora de Roupas</title>
+    <style>
+        body {
+            background-color: #fdf5e6;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fffaf0;
+            width: 400px;
+            padding: 40px 30px;
+            border: 1px solid #d2b48c;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+@558391891637
