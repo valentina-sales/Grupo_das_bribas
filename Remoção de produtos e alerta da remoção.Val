@@ -1,0 +1,22 @@
+function removerProduto() {
+  const nome = document.getElementById('produto').value.trim();
+
+  if (!nome) {
+    alert('Informe o nome do produto para remover.');
+    return;
+  }
+
+  const index = estoque.findIndex(p => p.nome.toLowerCase() === nome.toLowerCase());
+  if (index === -1) {
+    alert('Produto não encontrado.');
+    return;
+  }
+
+  estoque.splice(index, 1); // ← REMOVE o produto do array 'estoque'
+  salvarEstoque();          // ← Atualiza o localStorage
+  atualizarEstoqueVisual(); // ← Atualiza o HTML (lista visível)
+
+  alert(`Produto "${nome}" removido com sucesso.`); // ← MENSAGEM DE CONFIRMAÇÃO
+
+  document.getElementById('produto').value = ''; // ← Limpa o campo
+}
